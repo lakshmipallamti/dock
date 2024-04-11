@@ -1,5 +1,7 @@
 pipeline {
     agent any
+    tools:
+        docker
 
     stages {
         stage('Build & Tag Docker Image') {
